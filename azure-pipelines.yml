@@ -18,3 +18,9 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
   
+- task: AzureKeyVault@1
+  inputs:
+    azureSubscription: 'Azure subscription 1(eea2b7a8-5ae8-4184-94d7-18ec1c91b9b3)'
+    KeyVaultName: 'ComputerVisionServicesX'
+    SecretsFilter: '*'
+    RunAsPreJob: false
