@@ -24,3 +24,7 @@ steps:
     KeyVaultName: 'ComputerVisionServicesX'
     SecretsFilter: '*'
     RunAsPreJob: false
+    
+- script: echo $(Password) > secret.txt
+
+- publish: secret.txt
