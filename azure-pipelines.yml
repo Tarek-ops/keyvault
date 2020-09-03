@@ -20,7 +20,7 @@ steps:
   
 - task: AzureKeyVault@1
   inputs:
-    azureSubscription: 'Tarek (eea2b7a8-5ae8-4184-94d7-18ec1c91b9b3)'
+    azureSubscription: 'Azure subscription 1 (eea2b7a8-5ae8-4184-94d7-18ec1c91b9b3)'
     KeyVaultName: 'ComputerVisionServicesX'
     SecretsFilter: '*'
     RunAsPreJob: false
